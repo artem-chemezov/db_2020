@@ -8,10 +8,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdfc0e8a-42f5-47e9-bcb2-2e352529ee85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homework/enums/HttpCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/enums/HttpCodeService.java" afterDir="false" />
-    </list>
+    <list default="true" id="bdfc0e8a-42f5-47e9-bcb2-2e352529ee85" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,22 +196,22 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="476" y="150" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1598992540362" />
-    <state width="1431" height="310" key="GridCell.Tab.0.bottom" timestamp="1599088574469">
+    <state width="1431" height="310" key="GridCell.Tab.0.bottom" timestamp="1599088809952">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="310" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1599088574469" />
-    <state width="1431" height="310" key="GridCell.Tab.0.center" timestamp="1599088574467">
+    <state width="1431" height="310" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1599088809952" />
+    <state width="1431" height="310" key="GridCell.Tab.0.center" timestamp="1599088809950">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="310" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1599088574467" />
-    <state width="1431" height="310" key="GridCell.Tab.0.left" timestamp="1599088574467">
+    <state width="1431" height="310" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1599088809950" />
+    <state width="1431" height="310" key="GridCell.Tab.0.left" timestamp="1599088809950">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="310" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1599088574467" />
-    <state width="1431" height="310" key="GridCell.Tab.0.right" timestamp="1599088574468">
+    <state width="1431" height="310" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1599088809950" />
+    <state width="1431" height="310" key="GridCell.Tab.0.right" timestamp="1599088809951">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="310" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1599088574468" />
+    <state width="1431" height="310" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1599088809951" />
     <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1599088526087">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -243,21 +240,5 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1599081808708" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/homework/enums/HttpCodeService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/homework/enums/HttpCodeService.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

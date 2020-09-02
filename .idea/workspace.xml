@@ -9,29 +9,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdfc0e8a-42f5-47e9-bcb2-2e352529ee85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/db_2020.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_0_android.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_16_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/riddle_game/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homework/riddle_game/RiddleGamer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homework/riddle_game/RiddleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homework/riddle_game/RiddleGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Elf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/GameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/HeroFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Heroes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Hobbit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/Eagle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/inheritance_anti_pattern/Boiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/inheritance_anti_pattern/IsraelBoiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/abstract_classes/inheritance_anti_pattern/good_house/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collections/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/model/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/bad_example/HelperUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/bad_example/WorkingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/good_example/HelperService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/good_example/HelperServiceMock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/good_example/HelperServiceProd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/good_example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deutsche/services/good_example/MainService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contstants/AllConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contstants/GraphicService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contstants/SystemConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contstants/UIConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Airplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Bird.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Flyable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/Z.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/AbstractGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Chess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/ChessPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Football.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/OldManChessPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/Tennis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design_patterns/template_method/TennisPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/garabage_collector/FileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/generies/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/DynamicIntegerArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/DynamicIntegerArrayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/another/CopyDoubleArrayMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/riddle_game/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/riddle_game/RiddleGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homework/riddle_game/RiddleGamer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work_with_file_system/MainToRead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/work_with_file_system/MainToWrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/StartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/homework/DynamicIntegerArrayImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +81,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +99,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="heroes" />
+                    <option name="lastUsedInstant" value="1599041665" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="homeworks" />
                     <option name="lastUsedInstant" value="1598990837" />
@@ -83,6 +129,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1gswo0Gyuy3yIsCxzLFAJG4FwDA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,7 +148,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <module name="db_2020" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework.riddle_game.Main" />
       <module name="db_2020" />
@@ -141,6 +203,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.RiddleGame" />
       </list>
@@ -156,7 +219,7 @@
       <updated>1598916778296</updated>
       <workItem from="1598916779374" duration="1696000" />
       <workItem from="1598990705729" duration="1275000" />
-      <workItem from="1598992012324" duration="4820000" />
+      <workItem from="1598992012324" duration="10816000" />
     </task>
     <servers />
   </component>
@@ -188,46 +251,50 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="254" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1598992035502" />
-    <state x="605" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1598995286114">
+    <state x="605" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1599042978128">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="605" y="133" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1598995286114" />
+    <state x="605" y="133" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1599042978128" />
+    <state x="744" y="241" key="#xdebugger.evaluate" timestamp="1599045526156">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="744" y="241" key="#xdebugger.evaluate/62.0.1474.864@62.0.1474.864" timestamp="1599045526156" />
     <state x="476" y="150" key="FileChooserDialogImpl" timestamp="1598992540362">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="476" y="150" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1598992540362" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1598996862882">
+    <state width="1431" height="310" key="GridCell.Tab.0.bottom" timestamp="1599047034337">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1598996862882" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1598996862882">
+    <state width="1431" height="310" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1599047034337" />
+    <state width="1431" height="310" key="GridCell.Tab.0.center" timestamp="1599047034336">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1598996862882" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1598996862882">
+    <state width="1431" height="310" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1599047034336" />
+    <state width="1431" height="310" key="GridCell.Tab.0.left" timestamp="1599047034336">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1598996862882" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1598996862882">
+    <state width="1431" height="310" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1599047034336" />
+    <state width="1431" height="310" key="GridCell.Tab.0.right" timestamp="1599047034336">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1598996862882" />
-    <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1598996803718">
+    <state width="1431" height="310" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1599047034336" />
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1599045551428">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="277" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1598996803718" />
-    <state width="1431" height="277" key="GridCell.Tab.1.center" timestamp="1598996803717">
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1599045551428" />
+    <state width="1431" height="277" key="GridCell.Tab.1.center" timestamp="1599045551428">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="277" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1598996803717" />
-    <state width="1431" height="277" key="GridCell.Tab.1.left" timestamp="1598996803717">
+    <state width="1431" height="277" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1599045551428" />
+    <state width="1431" height="277" key="GridCell.Tab.1.left" timestamp="1599045551428">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="277" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1598996803717" />
-    <state width="1431" height="277" key="GridCell.Tab.1.right" timestamp="1598996803718">
+    <state width="1431" height="277" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1599045551428" />
+    <state width="1431" height="277" key="GridCell.Tab.1.right" timestamp="1599045551428">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="277" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1598996803718" />
+    <state width="1431" height="277" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1599045551428" />
     <state x="280" y="14" key="SettingsEditor" timestamp="1598993323353">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

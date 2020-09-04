@@ -4,36 +4,31 @@ import lombok.Data;
 
 import java.sql.Time;
 @Data
-public class RadioAlarm implements Alarm, Radio{
-    private String song;
-    private int volume;
-    @Override
-    public void wakeUp() {
-        System.out.println("wake up!!");
+public class RadioAlarm{
+    private Alarm alarm;
+    private Radio radio;
+
+    public void wakeUp(){
+        alarm.wakeUp();
     }
 
-    @Override
-    public void setTime(Time time) {
-        this.setTime(time);
+    public void setTime(Time time){
+        alarm.setTime(time);
     }
 
-    @Override
-    public void changeMusic(String song) {
-        this.song = song;
+    public void changeMusic(String song){
+        alarm.changeMusic(song);
     }
 
-    @Override
-    public void increaseVolume() {
-        this.setVolume(this.getVolume() + 1);
+    public void increaseVolume(){
+        radio.increaseVolume();
     }
 
-    @Override
-    public void decreaseVolume() {
-        this.setVolume(this.getVolume() - 1);
+    public void decreaseVolume(){
+        radio.increaseVolume();
     }
 
-    @Override
-    public void somethingRadioElse() {
-        System.out.println("something else");
+    public void somethingRadioElse(){
+        radio.somethingRadioElse();
     }
 }

@@ -1,4 +1,7 @@
 package alarm;
+
+import lombok.Data;
+
 @Data
 public class Radio extends RadioAlarm{
     private int volume;

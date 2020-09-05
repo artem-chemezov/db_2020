@@ -18,5 +18,10 @@ public class Exercise {
     private double answer;
     private Operator operator;
 
-
+    public Exercise(double a, double b, Operator operator) {
+        this.a = a;
+        this.b = b;
+        this.operator = operator;
+        this.answer = operator.operate(a,b);
+    }
 }

@@ -1,26 +1,47 @@
 package homework.never_use_switch;
 
-import homework.never_use_switch.mails.FirstMail;
-import homework.never_use_switch.mails.SecondMail;
-import homework.never_use_switch.mails.ThirdMail;
+import lombok.SneakyThrows;
+import org.reflections.Reflections;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author Evgeny Borisov
  */
 public class MailDistributor {
-    private Context context;
 
-    MailDistributor(){
-        this.context = new Context();
+    private Map<Integer,MailSender> mailSenderMap = new HashMap<>();
 
-        context.registerMethod(1, new FirstMail());
-        context.registerMethod(2, new SecondMail());
-        context.registerMethod(3, new ThirdMail());
 
+    @SneakyThrows
+    public MailDistributor() {
+        Reflections scanner = new Reflections("homework.never_use_switch");
+        Set<Class<? extends MailSender>> classes = scanner.getSubTypesOf(MailSender.class);
+        for (Class<? extends MailSender> aClass : classes) {
+            MailSender mailSender = aClass.getDeclaredConstructor().newInstance();
+            if (mailSenderMap.containsKey(mailSender.myCode())) {
+                throw new IllegalStateException(mailSender.myCode() + " already exists");
+            }
+            mailSenderMap.put(mailSender.myCode(), mailSender);
+        }
     }
 
     public void sendMailInfo(MailInfo mailInfo) {
-        context.call(mailInfo.getMailType(), mailInfo);
 
+        MailSender mailSender = mailSenderMap.getOrDefault(mailInfo.getMailType(), new DefaultMailSender());
+        mailSender.sendMail(mailInfo);
     }
 }
+
+
+
+
+
+
+
+
+
+
+

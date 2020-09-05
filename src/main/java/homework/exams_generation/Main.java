@@ -9,7 +9,7 @@ public class Main {
         Examinator exam = new Examinator();
 
 
-        ExerciseGenerator gen = new ExerciseMultiplyingByEight();
+        ExerciseGenerator gen = new ExerciseMinusLessHundred();
         List<Exercise> exercises = exam.generate(15, gen);
 
         exercises.forEach(System.out::println);

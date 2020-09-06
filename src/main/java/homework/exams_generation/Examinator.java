@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author Evgeny Borisov
  */
-public abstract class Examinator {
+public class Examinator {
     protected ExerciseGenerator type;
     public List<Exercise> generate(int amount) {
         List<Exercise> exercises = new ArrayList<>();

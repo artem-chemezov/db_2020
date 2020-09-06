@@ -6,11 +6,10 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Examinator exam = new Examinator();
-
+        Examinator exam = new ExaminatorMultiplyingByEight();
 
         ExerciseGenerator gen = new ExerciseMinusLessHundred();
-        List<Exercise> exercises = exam.generate(15, gen);
+        List<Exercise> exercises = exam.generate(15);
 
         exercises.forEach(System.out::println);
     }

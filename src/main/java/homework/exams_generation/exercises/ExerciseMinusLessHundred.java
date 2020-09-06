@@ -1,5 +1,8 @@
-package homework.exams_generation;
+package homework.exams_generation.exercises;
 
+import homework.exams_generation.Exercise;
+import homework.exams_generation.ExerciseGenerator;
+import homework.exams_generation.Operator;
 import org.decimal4j.util.DoubleRounder;
 
 public class ExerciseMinusLessHundred implements ExerciseGenerator {

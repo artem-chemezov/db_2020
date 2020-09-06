@@ -1,10 +1,13 @@
-package homework.exams_generation;
+package homework.exams_generation.exercises;
 
+import homework.exams_generation.Exercise;
+import homework.exams_generation.ExerciseGenerator;
+import homework.exams_generation.Operator;
 import org.decimal4j.util.DoubleRounder;
 
 import java.util.Random;
 
-public class ExerciseMultiplyingByEight implements ExerciseGenerator{
+public class ExerciseMultiplyingByEight implements ExerciseGenerator {
 
     @Override
     public Exercise getExercise() {

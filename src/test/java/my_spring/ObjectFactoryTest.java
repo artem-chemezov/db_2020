@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import java.util.Map;
+
 /**
  * @author Evgeny Borisov
  */
@@ -33,6 +35,42 @@ public class ObjectFactoryTest {
         ObjectFactory.getInstance().setConfig(config);
         SuperHero superHero = ObjectFactory.getInstance().createObject(SuperHero.class);
         Assert.assertEquals(Batman.class, superHero.getClass());
+    }
+
+    @Test
+    public void checkCleanerIsSingleton(){
+        Map<Class<?>, Class<?>> map = Map.of(
+                Speaker.class, ConsoleSpeaker.class
+        );
+
+
+        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
+        });
+
+        IRobot iRobot1 = ObjectFactory.getInstance().createObject(IRobot.class);
+        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
+        });
+
+        IRobot iRobot2 = ObjectFactory.getInstance().createObject(IRobot.class);
+        Assert.assertTrue(iRobot2.getClass().getDeclaredFields()[2].equals(iRobot1.getClass().getDeclaredFields()[2]));
+    }
+
+    @Test
+    public void checkSpeakerIsSingleton(){
+        Map<Class<?>, Class<?>> map = Map.of(
+                Speaker.class, ConsoleSpeaker.class
+        );
+
+
+        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
+        });
+
+        IRobot iRobot1 = ObjectFactory.getInstance().createObject(IRobot.class);
+        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
+        });
+
+        IRobot iRobot2 = ObjectFactory.getInstance().createObject(IRobot.class);
+        Assert.assertTrue(iRobot2.getClass().getDeclaredFields()[1].equals(iRobot1.getClass().getDeclaredFields()[1]));
     }
 }
 

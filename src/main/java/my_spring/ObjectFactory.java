@@ -11,16 +11,14 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Evgeny Borisov
  */
 public class ObjectFactory {
 
-
+    private Map<Class<?>, Object> instances = new HashMap<>();
 
     private static ObjectFactory objectFactory = new ObjectFactory();
     @Setter
@@ -47,8 +45,15 @@ public class ObjectFactory {
 
     @SneakyThrows
     public <T> T createObject(Class<T> type) {
+        T t;
         Class<? extends T> implClass = resolveImpl(type);
-        T t = create(implClass);
+
+        if (instances.containsKey(implClass)) {
+            t = (T) instances.get(implClass);
+        } else {
+            t = create(implClass);
+        }
+
         configure(t);
         invokeInitMethod(implClass, t);
         return t;
@@ -66,24 +71,6 @@ public class ObjectFactory {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     private <T> void configure(T t) {
         objectConfigurers.forEach(objectConfigurer -> objectConfigurer.configure(t));
@@ -108,6 +95,10 @@ public class ObjectFactory {
             implClass = type;
         }
         return implClass;
+    }
+
+    public <T> void putNewInstance(Class<T> c, T o){
+        instances.put(c, o);
     }
 }
 

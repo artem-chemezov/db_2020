@@ -62,12 +62,13 @@
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
         </dependency>
-
         <dependency>
-            <groupId>org.decimal4j</groupId>
-            <artifactId>decimal4j</artifactId>
-            <version>1.0.3</version>
+            <!--  Only bundled with java 1.6+ -->
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
         </dependency>
+
     </dependencies>
 
 

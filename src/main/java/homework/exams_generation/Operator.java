@@ -32,4 +32,10 @@ public enum Operator {
     private final String sign;
     abstract double operate(double a, double b);
 
+
+    @Override
+    public String toString() {
+        return sign;
+    }
+
 }

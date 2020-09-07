@@ -1,8 +1,8 @@
 package homework.exams_generation;
 
-import java.util.Random;
-
+/**
+ * @author Evgeny Borisov
+ */
 public interface ExerciseGenerator {
-    Random rand = new Random();
-    Exercise getExercise();
+    Exercise generate();
 }

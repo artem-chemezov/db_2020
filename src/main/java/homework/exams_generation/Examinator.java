@@ -1,36 +1,31 @@
 package homework.exams_generation;
 
-import heroes.Hero;
-import homework.exams_generation.exercises.ExercisesDefault;
-import org.reflections.Reflections;
+import heroes.RandomUtil;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * @author Evgeny Borisov
  */
+@RequiredArgsConstructor
 public class Examinator {
-    private List<ExerciseGenerator> types;
+
+    private final List<ExerciseGenerator> exerciseGenerators;
 
     public List<Exercise> generate(int amount) {
-        int quantityOfTypes = types.size();
-        int remains = amount % quantityOfTypes;
+
+
+            System.out.println();
 
         List<Exercise> exercises = new ArrayList<>();
-        for (int i = 0; i < amount; i++) {
-            exercises.add(types.get(i % quantityOfTypes).getExercise());
-        }
-        return exercises;
-    }
 
-    public Examinator(ExerciseGenerator... typesOfExercises) {
-//        Reflections scanner = new Reflections("homework.exams_generation.exercises");
-//        this.types = new ArrayList<ExerciseGenerator>(scanner.get getTypesOf(ExerciseGenerator.class));
-//        this.type = new ExercisesDefault();
-        if (typesOfExercises.length == 0){
-            this.types.add(new ExercisesDefault());
+        for (int i = 0; i < amount; i++) {
+            exercises.add(RandomUtil.randomItem(exerciseGenerators).generate());
         }
-        this.types = List.of(typesOfExercises);
+
+        return exercises;
     }
 }

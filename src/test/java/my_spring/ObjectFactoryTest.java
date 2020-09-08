@@ -1,10 +1,10 @@
 package my_spring;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
-
-import java.util.Map;
+import reflections_example.MyTestClass;
 
 /**
  * @author Evgeny Borisov
@@ -12,15 +12,23 @@ import java.util.Map;
 public class ObjectFactoryTest {
 
 
+    private ApplicationContext context;
+
+    @Before
+    public void setUp() throws Exception {
+        context = new ApplicationContext(new JavaConfig(null, "my_spring"));
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void injectRandomIntForIncorrectValuesIsFailing() {
-        ObjectFactory.getInstance().createObject(Developer.class);
+
+        context.getBean(Developer.class);
     }
 
     @Test
     public void injectRandomIntIsWorking() {
 
-        Soldier soldier = ObjectFactory.getInstance().createObject(Soldier.class);
+        Soldier soldier = context.getBean(Soldier.class);
         Assert.assertTrue(soldier.getPower() < 15 && soldier.getPower() > 7);
     }
 
@@ -28,49 +36,27 @@ public class ObjectFactoryTest {
     public void objectWasCreatedFromConfiguredClass() {
 
         Config config = Mockito.mock(Config.class);
+        Mockito.when(config.getPackageToScan()).thenReturn("my_spring");
 
         Mockito.when(config.getImpl(SuperHero.class)).then(invocation -> Batman.class);
 
+        ApplicationContext context = new ApplicationContext(config);
 
-        ObjectFactory.getInstance().setConfig(config);
-        SuperHero superHero = ObjectFactory.getInstance().createObject(SuperHero.class);
+        SuperHero superHero = context.getBean(SuperHero.class);
         Assert.assertEquals(Batman.class, superHero.getClass());
     }
 
-    @Test
-    public void checkCleanerIsSingleton(){
-        Map<Class<?>, Class<?>> map = Map.of(
-                Speaker.class, ConsoleSpeaker.class
-        );
-
-
-        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
-        });
-
-        IRobot iRobot1 = ObjectFactory.getInstance().createObject(IRobot.class);
-        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
-        });
-
-        IRobot iRobot2 = ObjectFactory.getInstance().createObject(IRobot.class);
-        Assert.assertTrue(iRobot2.getClass().getDeclaredFields()[2].equals(iRobot1.getClass().getDeclaredFields()[2]));
-    }
 
     @Test
-    public void checkSpeakerIsSingleton(){
-        Map<Class<?>, Class<?>> map = Map.of(
-                Speaker.class, ConsoleSpeaker.class
-        );
+    public void testSingletonWillBeCreatedOnlyOnce() {
+        MySingleton bean1 = context.getBean(MySingleton.class);
+        MySingleton bean2 = context.getBean(MySingleton.class);
+        context.getBean(MySingleton.class);
+
+        Assert.assertTrue(bean1==bean2);
+        Assert.assertEquals(1,MySingleton.counter);
 
 
-        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
-        });
-
-        IRobot iRobot1 = ObjectFactory.getInstance().createObject(IRobot.class);
-        ObjectFactory.getInstance().setConfig(new JavaConfig(map,"my_spring") {
-        });
-
-        IRobot iRobot2 = ObjectFactory.getInstance().createObject(IRobot.class);
-        Assert.assertTrue(iRobot2.getClass().getDeclaredFields()[1].equals(iRobot1.getClass().getDeclaredFields()[1]));
     }
 }
 

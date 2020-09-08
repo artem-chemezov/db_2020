@@ -5,12 +5,12 @@ import javax.annotation.PostConstruct;
 /**
  * @author Evgeny Borisov
  */
-@Singleton
-public class CleanerImpl implements Cleaner {
+@Benchmark
+public final class CleanerImpl implements Cleaner {
 
 
     @InjectRandomInt(min = 3, max = 10)
-    private int repeat = 1;
+    private int repeat;
 
     @PostConstruct
     public void init() {

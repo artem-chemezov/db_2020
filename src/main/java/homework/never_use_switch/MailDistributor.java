@@ -18,11 +18,7 @@ public class MailDistributor {
 
     private Map<Integer,MailSender> mailSenderMap = new HashMap<>();
 
-    @Autowired
-    private Set<MailSender> senders;
-
-    @PostConstruct
-    private void init(){
+    public MailDistributor(@Autowired Set<MailSender> senders) {
         senders.forEach(sender -> mailSenderMap.put(sender.myCode(), sender));
     }
 
